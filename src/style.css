@@ -77,7 +77,7 @@ header .icons .fa-search {
     max-height: 500px;
 }
 
-body > .info {
+body .info {
     padding: var(--padding);
 }
 
@@ -203,7 +203,7 @@ body > .info {
     width: 100%;
 }
 
-.Upnext .item .info {
+.Upnext .item .UpnextInfo {
     flex: 1 1 60%;
     display: flex;
     flex-direction: column;
@@ -213,13 +213,24 @@ body > .info {
     flex: 1 1 5%;
 }
 
-.Upnext .item .info .title {
+.Upnext .item .UpnextInfo .title {
     font-size: var(--font-small);
 }
 
-.Upnext .item .info .name,
-.Upnext .item .info .views {
+.Upnext .item .UpnextInfo .name,
+.Upnext .item .UpnextInfo .views {
     font-size: var(--font-micro);
 }
 
+.infoAndUpNext {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:  768px){
+    .infoAndUpNext {
+        flex-direction: row;
+        margin: var(--padding) 0;
+    }
+}
 
